@@ -1,0 +1,8 @@
+---
+- name: Configure A Fresh Fedora Installation
+  hosts: local
+  connection: local
+
+  roles:
+    - packages
+    - services
