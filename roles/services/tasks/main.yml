@@ -1,5 +1,5 @@
 ---
-- name: Disable Unnecessary System Services
+- name: Disable Services
   systemd:
     name: "{{ item }}"
     enabled: no
@@ -8,11 +8,3 @@
     - "libvirtd.service"
     - "ModemManager.service"
     - "sshd.service"
-
-- name: Enable Necessary System Services
-  systemd:
-    name: "{{ item }}"
-    enabled: yes
-    state: started
-  loop:
-    - "dnscrypt-proxy.service"
