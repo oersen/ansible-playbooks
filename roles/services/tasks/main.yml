@@ -5,6 +5,5 @@
     enabled: no
     state: stopped
   loop:
-    - "libvirtd.service"
     - "ModemManager.service"
     - "sshd.service"
