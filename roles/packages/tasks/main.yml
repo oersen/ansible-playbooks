@@ -4,6 +4,7 @@
   dnf:
     state: present
     name:
+      - "adw-gtk3-theme"
       - "android-tools"
       - "aria2"
       - "asciiquarium"
@@ -33,7 +34,6 @@
       - "fzf"
       - "galculator"
       - "git"
-      - "gnome-themes-extra"
       - "grimshot"
       - "gvfs-mtp"
       - "gvfs-smb"
